@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "format_filename_dates"
+authors = [{name = "Stephen Roille", email = "stephen.roille@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/StephenRoille/format_filename_dates"
+
+[project.scripts]
+format_filename_dates = "format_filename_dates.__main__:main"
+
+[tool.flit.module]
+name = "format_filename_dates"
